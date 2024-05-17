@@ -1,6 +1,8 @@
 from __future__ import absolute_import
 from ccl_scratch_tools.scratch_to_blocks import blocks
 
+blocks.INPUTS.update({"operator_letter_of": ("(letter {} of {})", ["LETTER", "STRING"])})
+
 
 class Visualizer():
     """A way to visualize blocks by exporting to Scratchblocks syntax.
